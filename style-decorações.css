@@ -21,7 +21,7 @@ header{
     height: 10vh;
 }
 
-#circle{
+#circle-section{
     display: flex;
     justify-content: center;
     padding: 5%;
@@ -30,7 +30,7 @@ header{
     margin-bottom: 100px;
 }
 
-#circle::after{
+#circle-section::after{
     content: '';
     display: block;
     position: absolute;
@@ -46,7 +46,7 @@ header{
     transform: skew(0, -3deg);
 }
 
-#circle .container{
+#circle-section .container{
     width: 80%;
     border-radius: 20px;
 }
@@ -136,4 +136,31 @@ header{
         animation: color-image var(--time) linear;
         clip-path: none;
     }
+}
+
+#image-section{
+    padding: 20px;
+    height: 60vh;
+    background: white;
+    display: flex;
+    overflow: hidden;
+}
+
+#image-section img{
+    translate: -36%;
+    rotate: 50deg;
+    scale: 1.8;
+}
+
+#image-section .imagem{
+    height: inherit;
+    width: inherit;
+    clip-path: circle(60% at -5%);
+}
+
+#image-section .texto{
+    display: grid;
+    grid-template-rows: 1fr 1fr 5fr;
+    grid-template-columns: auto;
+    justify-items: center;
 }
