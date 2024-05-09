@@ -1,0 +1,106 @@
+:root {
+    --1rstcolumn: 14%;
+    --2ndcolumn: 20%;
+    --3rdcolumn: 40%;
+    --4thcolumn: 100%;
+}
+
+#container {
+    position: absolute;
+    border: 2px solid darkblue;
+    background-color: rgb(24, 24, 56);
+    border-radius: 5px;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 550px;
+}
+
+#graph {
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+    max-width: 500px;
+    max-height: 500px;
+    min-width: 500px;
+    min-height: 500px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+.collum {
+    background-color: lime;
+    border: 1px solid whitesmoke;
+    min-width: 40px;
+    position: relative;
+}
+
+#column1 {
+    position: relative;
+    height: var(--1rstcolumn);
+}
+
+#column2 {
+    height: var(--2ndcolumn);
+}
+
+#column3 {
+    height: var(--3rdcolumn);
+}
+
+#column4 {
+    height: var(--4thcolumn);
+}
+
+#month {
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    translate: 4%;
+}
+
+#month div{
+    color: white;
+    font-size: 1.2rem;
+}
+
+#numbers {
+    color: white;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#n0 {
+    margin-bottom: 0;
+}
+
+
+.informations {
+    display: flex;
+    align-items: flex-end;
+}
+
+.informations {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    color: transparent;
+    background-color: transparent;
+    min-height: 20px;
+    max-height: var(--1rstcolumn);
+    /* border: 2px solid aqua; */
+    transition: 200ms ease-in color;
+}
+
+.collum:hover .informations{
+    position: absolute;
+    font-size: 1.1rem;
+    color: white;
+    text-shadow: 1px 1px 0.5px black;
+    display: flex;
+    background-color: orange;
+    border: 1px solid black;
+    min-width: 80px;
+    min-height: 20px;
+}

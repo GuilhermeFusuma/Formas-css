@@ -1,0 +1,76 @@
+@keyframes playing-music {
+    from{
+        transform: scaleY(1);
+    }
+    25%{
+        transform: scaleY(.7);
+    }
+    50%{
+        transform: scaleY(.4);
+    }
+    75%{
+        transform: scaleY(.1);
+    }
+    to{
+        transform: scaleY(.8);
+    }
+}
+
+#b1{
+    animation: playing-music ease-in-out 550ms infinite;
+}
+#b2{
+    animation: playing-music ease-in-out 390ms infinite;
+}
+#b3{
+    animation: playing-music ease-in-out 560ms infinite;
+}
+#b4{
+    animation: playing-music ease-in-out 410ms infinite;
+}
+#b5{
+    animation: playing-music ease-in-out 500ms infinite;
+}
+#b6{
+    animation: playing-music ease-in-out 380ms infinite;
+}
+#b7{
+    animation: playing-music ease-in-out 360ms infinite;
+}
+#b8{
+    animation: playing-music ease-in-out 350ms infinite;
+}
+#b9{
+    animation: playing-music ease-in-out 700ms infinite;
+}
+#b10{
+    animation: playing-music ease-in-out 600ms infinite;
+}
+#b11{
+    animation: playing-music ease-in-out 680ms infinite;
+}
+#b12{
+    animation: playing-music ease-in-out 400ms infinite;
+}
+#b13{
+    animation: playing-music ease-in-out 500ms infinite;
+}
+#b14{
+    animation: playing-music ease-in-out 650ms infinite;
+}
+#b15{
+    animation: playing-music ease-in-out 560ms infinite;
+}
+
+@keyframes current-playstate {
+    to{
+        transform: scale(1, 1);
+    }
+}
+
+#playstate{
+    --musicduration:  50s;
+
+
+    animation: current-playstate linear var(--musicduration);
+}

@@ -1,0 +1,235 @@
+body {
+    background-color: darkblue;
+}
+
+#head {
+    width: 123px;
+    height: 97px;
+    background-color: white;
+    border-radius: 40%;
+    position: absolute;
+    margin: 100px 0 0 100px;
+}
+
+#ear1 {
+    width: 15px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid darkblue;
+    box-shadow: 2px 0 5px aqua;
+    margin: 120px 0 0 95px;
+    position: absolute;
+}
+
+#ear2 {
+    width: 15px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid darkblue;
+    box-shadow: -2px 0 5px aqua;
+    margin: 120px 0 0 208px;
+    position: absolute;
+}
+
+#eye-pocket {
+    width: 86px;
+    height: 35px;
+    background-color: black;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: absolute;
+    margin: 128px 0 0 118px;
+}
+
+#eye1 {
+    width: 16px;
+    height: 30px;
+    background-color: aquamarine;
+    border-radius: 50%;
+    position: absolute;
+    margin: 131px 0 0 135px;
+}
+
+#eye2 {
+    width: 16px;
+    height: 30px;
+    background-color: aquamarine;
+    border-radius: 50%;
+    position: absolute;
+    margin: 131px 0 0 170px;
+}
+
+#neck {
+    width: 18px;
+    height: 13px;
+    background-color: gray;
+    position: absolute;
+    margin: 197px 0 0 152px;
+}
+
+#neck::after {
+    content: "";
+    width: 18px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    margin: 8px 0 0 0;
+}
+
+#core {
+    width: 101px;
+    height: 148px;
+    background-color: white;
+    border-radius: 45%;
+    position: absolute;
+    margin: 210px 0 0 111px;
+}
+
+.joint {
+    position: absolute;
+    background-color: gray;
+}
+
+.arm {
+    background-color: white;
+    position: absolute;
+}
+
+.leg {
+    position: absolute;
+    background-color: white;
+}
+
+#joint-arm-l1 {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border-radius: 50%;
+    margin: 217px 0 0 110px;
+}
+
+#upperarm-l {
+    width: 15px;
+    height: 45px;
+    border: 0.01px solid darkblue;
+    border-radius: 3px;
+    margin: 0 30px 3px 0;
+    rotate: -97deg;
+    margin: 214px 0 0 83px;
+}
+
+#joint-arm-l2 {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    margin: 233px 0 0 55px;
+}
+
+#forearm-l {
+    width: 20px;
+    height: 50px;
+    border-radius: 10px;
+    clip-path: polygon(50% 0, 100% 90%, 50% 100%, 0 90%);
+    position: absolute;
+    margin: -50px 0px 0 2px;
+}
+
+#hand-l {
+    width: 24px;
+    height: 25px;
+    background-color: silver;
+    position: absolute;
+    border-radius: 40%;
+    clip-path: ellipse(10px 17px at 50% 20%);
+    margin: -75px 0 0 0;
+}
+
+#joint-arm-r1 {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border-radius: 50%;
+    margin: 217px 0 0 180px;
+}
+
+#upperarm-r {
+    width: 15px;
+    height: 45px;
+    border: 0.01px solid darkblue;
+    border-radius: 3px;
+    rotate: 150deg;
+    margin: 239px 0 0 206px;
+}
+
+#joint-arm-r2 {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    margin: 282px 0 0 222px;
+}
+
+#forearm-r {
+    width: 20px;
+    height: 50px;
+    border-radius: 10px;
+    rotate: 180deg;
+    position: absolute;
+    clip-path: polygon(50% 0, 100% 90%, 50% 100%, 0 90%);
+    margin: 297px 0 0 219px;
+}
+
+#hand-r {
+    width: 24px;
+    height: 25px;
+    background-color: silver;
+    position: absolute;
+    border-radius: 40%;
+    rotate: 180deg;
+    clip-path: ellipse(10px 17px at 50% 20%);
+    margin: 348px 0 0 217px;
+}
+
+#float-device {
+    width: 60px;
+    height: 3px;
+    border: 2px solid black;
+    border-bottom-style: none;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 7px aqua;
+    position: absolute;
+    margin: 350px 0 0 130px;  
+}
+
+@keyframes wave {
+    from {
+        transform: rotate(0);
+    }
+    25% {
+        transform: rotate(40deg);
+    }
+    50% {
+        transform: rotate(0);
+    }
+    75% {
+        transform: rotate(-40deg);
+    }
+    to {
+        transform: rotate(0);
+    }
+}
+
+.wave-motion {
+    display: flex;
+    position: absolute;
+    border: black solid 1px;
+    margin: 230px 0 0 51px;
+}
+
+.wave-motion:hover {
+    animation: wave 500ms linear;
+    animation-iteration-count: infinite;
+}
