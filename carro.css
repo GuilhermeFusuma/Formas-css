@@ -148,23 +148,13 @@
 
 #circle4_g3::after {
     content: "";
-    display: block;
+    position: absolute;
     width: 2px;
     height: 20px;
     background-color: white;
     position: absolute; 
     margin: 50% 50%;
 }
-
-/* #circle4_g3::before {
-    content: "";
-    display: block;
-    width: 10px;
-    height: 5px;
-    background-color: skyblue;
-    position: absolute; 
-    margin: 12px 10px 0 10px;
-} */
 
 #rectangle_g4 {
 
@@ -218,22 +208,19 @@ margin: 50px 0 0 154px;
 }
 
 @keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-    /* 25% {
-        transform: rotate(90deg);
-    }
-    75% {
-        transform: rotate(180deg);
-    } */
-
     to {
-        transform: rotate(359deg);
+        transform: rotate(360deg);
     }
 }
 
-.wheel:hover {
+.grupo-3{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border: 1px red solid;
+}
+
+.wheel:hover{
     animation: rotate 500ms linear;
     animation-iteration-count: infinite;
 }

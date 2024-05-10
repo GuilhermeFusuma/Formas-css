@@ -186,3 +186,32 @@ header{
 #image-section p{
     font-size: 1.3rem;
 }
+
+footer{
+    background: papayawhip;
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+footer #logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright{
+    border: 1px solid black;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
