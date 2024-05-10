@@ -18,7 +18,8 @@ header{
         lavender,
         blanchedalmond
     );
-    height: 10vh;
+    max-height: 10vh;
+    padding: 10px;
 }
 
 #circle-section{
@@ -139,28 +140,49 @@ header{
 }
 
 #image-section{
-    padding: 20px;
     height: 60vh;
-    background: white;
-    display: flex;
+    background: linear-gradient(
+        45deg,
+        gray,
+        blanchedalmond
+    );
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     overflow: hidden;
 }
 
 #image-section img{
-    translate: -36%;
+    translate: -26%;
     rotate: 50deg;
+    height: 60vh;
+    max-width: 1000%;
     scale: 1.8;
+    grid-column: 1;
 }
 
 #image-section .imagem{
     height: inherit;
     width: inherit;
-    clip-path: circle(60% at -5%);
+    clip-path: circle(75% at 4vw);
+    overflow: hidden;
 }
 
 #image-section .texto{
     display: grid;
     grid-template-rows: 1fr 1fr 5fr;
+    gap: 20px;
     grid-template-columns: auto;
     justify-items: center;
+}
+
+#image-section h2{ 
+    font-size: 2.5rem;
+}
+
+#image-section h3{
+    font-size: 1.7rem;
+}
+
+#image-section p{
+    font-size: 1.3rem;
 }
